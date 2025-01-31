@@ -1,0 +1,16 @@
+{
+  "name": "course-selling",
+  "version": "1.0.0",
+  "description": "initialize a new node server\r add express , jsonwebtoken \r create index.js\r add route skeleton for login , siginup,see course,purchase course\r add middle ware for admin and user\r add a database \r define the schema for user , admin , course purchase\r complete the routes \r create the frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
