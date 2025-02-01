@@ -1,31 +1,12 @@
-const express=require("express")
-const jwt = require('jsonwebtoken')
-const app=express();
+const express = require('express');
+const app = express();
 
-app.use(express.json())
+const { userRouter } = require('./routes/user'); // Ensure the path is correct
+const { courseRouter } = require('./routes/course'); // Ensure the path is correct
 
+app.use('/user', userRouter);
+app.use('/course', courseRouter);
 
-app.post("/signup",(req,res)=>{
-
-})
-
-app.post("/login",(req,res)=>{
-
-})
-
-app.post("/seeCourse",(req,res)=>{
-
-})
-app.post("/buyCourse",(req,res)=>{
-
-})
-
-app.post("/purchasedCourse",(req,res)=>{
-
-})
-
-
-
-
-
-app.listen(3000);
+app.listen(3000, () => {
+    console.log('Server running on port 3000');
+});
